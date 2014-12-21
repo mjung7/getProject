@@ -1,0 +1,6 @@
+trainx<-read.csv("./train/X_train.txt")
+trainy<-read.csv("./train/y_train.txt")
+total_train<-merge(trainx,trainy)
+testx<-read.csv("./test/X_test.txt")
+test<-read.csv("./test/y_test.txt")
+total_test<-merge(testx,testy)
