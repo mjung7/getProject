@@ -4,3 +4,7 @@ total_train<-merge(trainx,trainy)
 testx<-read.csv("./test/X_test.txt")
 test<-read.csv("./test/y_test.txt")
 total_test<-merge(testx,testy)
+library(dplyr)
+final<-filter(total_test, mean, std)
+
+write.table(final, row.name=FALSE)
